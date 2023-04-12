@@ -12,14 +12,15 @@
     <!-- FUENTES -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200display=swap" rel="stylesheet"> 
+    <link href="https://fonts.googleapis.com/css2?family=Mukta:wght@200&display=swap" rel="stylesheet">
 </head>
 
 <body>
-  
-
+    
 <!-- HEADER  -->
-     <header class="header">
+    <header class="header">
+
+        <div class="navbar-web">
             <nav class="nav">
                 <div class="container">
                     <img src="multimedia/img/WhatsApp_Image_2023-03-10_at_21.12.59-removebg-preview.png" alt="logo" class="logo-nav-idex">
@@ -31,7 +32,32 @@
                     </ul>
                 </div>
             </nav>
-          
+        </div>
+
+        <div class="navbar-mobile">
+            <nav class="navbar sticky-top">
+                <div class="container-fluid">
+                    <img src="multimedia/img/WhatsApp_Image_2023-03-10_at_21.12.59-removebg-preview.png" alt="logo" class="logo-nav-idex">
+                    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+                        <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasNavbarLabel">MENU</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                            <li><a href="page/servicios.html" class="nav-link">servicios</a></li>
+                            <li><a href="page/eventos.html" class="nav-link">eventos</a></li>
+                            <li><a href="page/multimedia.html" class="nav-link">multimedia</a></li>
+                            <li><a href="page/contacto.html" class="nav-link">contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+                 
     </header> 
 
 <!-- MAIN -->
@@ -46,38 +72,60 @@
         </section>
         
         <section class="section-img">
-            <img src="multimedia/img/arreglos palmar.jpg" alt="arreglos">
+
+            <div id="carousel-index" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="multimedia/img/arreglos palmar.jpg" class="w-50" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="multimedia/img/decoracion palmar.jpg" class="w-50" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="multimedia/img/gente palmar.jpg" class="w-50" alt="...">
+                  </div>
+                </div>
+              </div>
+
+            <!-- <img src="multimedia/img/arreglos palmar.jpg" alt="arreglos">
             <img src="multimedia/img/decoracion palmar.jpg" alt="decoracion">
-            <img src="multimedia/img/gente palmar.jpg" alt="gente">
+            <img src="multimedia/img/gente palmar.jpg" alt="gente"> -->
         </section>
 
         <hr class="hr">
 
         <section class="testimonios">
             <h2>TESTIMONIOS</h2>
-            <div class="row">
-                <div class="card col-lg-3">
-                    <img src="multimedia/img/juan perez.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">“El salón de eventos es hermoso y el personal es muy amable. La comida es deliciosa y el servicio es     excelente. ¡Definitivamente recomendaría este lugar para cualquier evento especial!”.</p>
-                        <h5 class="card-title">Juan Perez</h5>
+                <div>
+                    <div class="card">
+                        <img src="multimedia/img/juan perez.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">“El salón de eventos es hermoso y el personal es muy amable. La comida es deliciosa y el servicio es excelente. ¡Definitivamente recomendaría este lugar para cualquier evento especial!”.</p>
+                            <h5 class="card-title">Juan Perez</h5>
+                        </div>
+                    </div>
+
+                    <div class="card">
+                        <img src="multimedia/img/susana horia.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">“¡El salón de eventos es hermoso! El personal es muy amable y servicial. ¡Mi evento fue un éxito gracias a ellos!”.</p>
+                            <h5 class="card-title">Susana Horia</h5>
+                        </div>
+                    </div>
+
+                    
+                    <div class="card">
+                        <img src="multimedia/img/esteban quito.jfif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <p class="card-text">“¡El salón de eventos es impresionante! El personal es muy profesional y atento a los detalles. ¡Mi evento fue perfecto gracias a ellos!”.</p>
+                            <h5 class="card-title">Esteban Quito</h5>
+                        </div>
                     </div>
                 </div>
-                <div class="col-lg-3">
-                    <img src="multimedia/img/susana horia.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">“¡El salón de eventos es hermoso! El personal es muy amable y servicial. ¡Mi evento fue un éxito gracias a ellos!”.</p>
-                        <h5 class="card-title">Susana Horia</h5>
-                    </div>
-                </div>
-                <div class="col-lg-3">
-                    <img src="multimedia/img/esteban quito.jfif" class="card-img-top" alt="...">
-                    <div class="card-body">
-                        <p class="card-text">“¡El salón de eventos es impresionante! El personal es muy profesional y atento a los detalles. ¡Mi evento fue perfecto gracias a ellos!”.</p>
-                        <h5 class="card-title">Esteban Quito</h5>
-                    </div>
-                </div>
-            </div>
+                    
+
+                    
+
         </section>
     </main>
 

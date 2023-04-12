@@ -1,4 +1,4 @@
-/* * { margin: 0; padding: 0; } */
+* { margin: 0; padding: 0; }
 @font-face {
     font-family: 'good_times';
     src: url(../fonts/good_times/good\ times\ rg.otf);
@@ -33,10 +33,13 @@ p {
     background-color:#d1b270;
     padding: 4px;
 }
+.navbar {
+    background-color: #FFBABA;
+}
 .nav-list {
     display: flex;
     justify-content: space-evenly;
-    margin-bottom: 0rem;
+    padding: 0px;
 }
 .nav-link {
     text-decoration: none;
@@ -82,9 +85,6 @@ p {
     margin: 40px 0px;
 }
 .section-img img {
-    width: 320px;
-    height: 240px;
-    padding: 30px;
     border-radius: 50px;
     object-fit: cover;
 }
@@ -115,6 +115,9 @@ p {
     margin: 40px;
     font-family: 'Mukta', sans-serif;
 }
+.testimonios {
+    display: grid;
+}
 .testimonios h2 {
     color: #8f6710;
     font-family: 'good_times';
@@ -125,18 +128,18 @@ p {
     display: flex;
     justify-content: center;
 }
+.card {
+    width: 25%;
+}
 .testimonios div {
     text-align: center;
-    background-color: white;
-    border: black 2px solid;
     margin: 20px 20px;
     display: flex;
-    flex-direction: column;
-    justify-content: center;
+    justify-content: space-evenly;
 }
-.testimonios section p {
-    text-align: center;
-    padding: 10px 10px 5px 10px;
+.card-body {
+    display: flex;
+    flex-direction: column;
 }
 
 /* SERVICIOS */
@@ -190,18 +193,34 @@ p {
     margin: 40px 0px;
     text-align: center;
 }
-.section-iconos-eventos {
+/* .section-iconos-eventos {
+    margin: 40px;
+    display: flex;
+    justify-content: center;
+} */
+/* .section-iconos-eventos div {
+    margin: 0px 70px;
+    text-align: center;
+} */
+/* .section-iconos-eventos img {
+    width: 50px;
+    height: 50px;
+} */
+.sin-carusel {
     margin: 40px;
     display: flex;
     justify-content: center;
 }
-.section-iconos-eventos div {
-    margin: 0px 70px;
-    text-align: center;
+.sin-carusel div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
-.section-iconos-eventos img {
-    width: 50px;
-    height: 50px;
+.sin-carusel img {
+    width: 25%;
+}
+.sin-carusel p {
+    padding: 5px
 }
 .img-eventos {
     text-align: center;
@@ -353,6 +372,9 @@ textarea {
         position: sticky;
         top: 0px;
     }
+    .navbar-web {
+        display: none;
+    }
     .nav {
         display: flex;
         justify-content: space-between;
@@ -419,6 +441,9 @@ textarea {
     .logo-nav-idex {
         display: none;
     }
+    .navbar-mobile {
+        display: none;
+    }
 }
 
 
@@ -427,6 +452,9 @@ textarea {
     .header2 {
         position: sticky;
         margin: 0px;
+    }
+    .navbar-web-2 {
+        display: none;
     }
     .nav2 {
         background-color: #d1b270;
@@ -494,6 +522,18 @@ textarea {
     .section-video-eventos iframe {
         width: auto;
         height: auto;
+    }
+    .sin-carusel {
+        display: none;
+    }
+    .carousel-inner {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+@media screen and (min-width: 1025px) {
+    .carousel-slide-eventos {
+        display: none;
     }
 }
 
