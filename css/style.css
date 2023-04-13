@@ -36,10 +36,17 @@ p {
 .navbar {
     background-color: #FFBABA;
 }
+.navbar-toggler {
+    color: #8f6710;
+}
+.offcanvas-title {
+    color: #8f6710;
+}
 .nav-list {
     display: flex;
     justify-content: space-evenly;
     padding: 0px;
+    margin-bottom: 0;
 }
 .nav-link {
     text-decoration: none;
@@ -53,7 +60,6 @@ p {
 
 /* SERV/EVEN/MULT/CONT*/
 .header2 {
-    height: 150px;
     margin: 10px 10px 0px 10px;
 }
 .nav2 {
@@ -79,10 +85,6 @@ p {
     width: 35%;
     float: left;
     margin-left: 50px;
-}
-.section-img {
-    text-align: center;
-    margin: 40px 0px;
 }
 .section-img img {
     border-radius: 50px;
@@ -129,7 +131,7 @@ p {
     justify-content: center;
 }
 .card {
-    width: 25%;
+    width: auto;
 }
 .testimonios div {
     text-align: center;
@@ -193,19 +195,6 @@ p {
     margin: 40px 0px;
     text-align: center;
 }
-/* .section-iconos-eventos {
-    margin: 40px;
-    display: flex;
-    justify-content: center;
-} */
-/* .section-iconos-eventos div {
-    margin: 0px 70px;
-    text-align: center;
-} */
-/* .section-iconos-eventos img {
-    width: 50px;
-    height: 50px;
-} */
 .sin-carusel {
     margin: 40px;
     display: flex;
@@ -353,6 +342,10 @@ textarea {
     font-size: small;
     padding: 10px;
 }
+.section-footer p {
+    font-size: small;
+    margin-bottom: 0;
+}
 .nav-link-footer {
     text-decoration: none;
     color:#8f6710;
@@ -485,6 +478,14 @@ textarea {
     .hr {
         display: none;
     } 
+    .section-iconos h2 {
+        text-align: center;
+        margin: 5px;
+    }
+    .section-iconos p {
+        text-align: center;
+        margin: 5px;
+    }
 }
 
 /* MEDIA SERVICIOS MAIN */
@@ -516,6 +517,8 @@ textarea {
         display: flex;
     }  
 }
+
+
 
 /* MEDIA EVENTOS MAIN */
 @media screen and (max-width: 1024px) {
@@ -577,5 +580,6 @@ textarea {
     .textarea textarea{
         width: 100%;
     }
-}
+
+  }
 
